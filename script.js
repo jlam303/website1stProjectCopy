@@ -1,6 +1,7 @@
 const guess = document.getElementById('userGuess');
 const submitButton = document.getElementById('userSubmission');
-const output = document.getElementById('output');
+const donationButton = document.getElementById('userDonation');
+const output = document.getElementById('_output');
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 var guessNum = 1;
 
@@ -26,4 +27,9 @@ function guessNumberGame(_randomNumber) {
     } else {
         _output("Use numbers only!")
     }
+};
+
+donationButton.onclick = function() {donate()};
+function donate() {
+    location.href = "https://shorturl.at/aMOPY";
 };
