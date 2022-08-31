@@ -1,11 +1,12 @@
 const guess = document.getElementById('userGuess');
 const submitButton = document.getElementById('userSubmission');
 const donationButton = document.getElementById('userDonation');
+const quizButton = document.getElementById('quizButton');
 const output = document.getElementById('_output');
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 var guessNum = 1;
 
-// Some weird thing happened with the random number so I had to find a way to force it into the function.
+// randomNumber game
 submitButton.onclick = function() {guessNumberGame(randomNumber)};
 function guessNumberGame(_randomNumber) {
     function _output(val) {
@@ -29,7 +30,16 @@ function guessNumberGame(_randomNumber) {
     }
 };
 
+// Donation link
 donationButton.onclick = function() {donate()};
 function donate() {
     location.href = "https://shorturl.at/aMOPY";
 };
+
+// Quiz
+quizButton.onclick = function() {quiz()};
+function quiz() {
+    location.href = "http://127.0.0.1:5500/dwayneQuiz.html";
+};
+
+
