@@ -14,7 +14,6 @@
     text-align: center;
 }
 #_bg{
-    overflow: hidden;
     font-family: "Font";
     background-color: #2B262C;
     color: rgb(240, 240, 240);
@@ -103,66 +102,68 @@
 
 #q8 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 10px;
 }
 
 #q9 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 210px;
 }
 
 #q10 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 410px;
 }
 
 #q11 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 610px;
 }
 
 #q12 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 810px;
 }
 
 #q13 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 1010px;
 }
 
 #q14 {
     position: absolute;
-    top: 110px;
+    top: 130px;
     left: 1210px;
 }
 
 #quizRockImg {
-    align-self: center;
+    align-content: center;
+    height: auto;
     position: absolute;
-    top: 260px;
+    top: 300px;
+    left: 100px;
 }
 
 #quizSubmission {
     margin: 0 auto;
     position: absolute;
-    top: 250px;
+    top: 290px;
 }
 
 #output {
     position: absolute;
     color: green;
-    top: 275px;
+    top: 270px;
     left: 100px;
 }
 
 #return {
     position: absolute;
-    top: 275px;
+    top: 315px;
 }
