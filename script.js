@@ -1,3 +1,4 @@
+// locate
 const guess = document.getElementById('userGuess');
 const submitButton = document.getElementById('userSubmission');
 const donationButton = document.getElementById('userDonation');
@@ -6,13 +7,15 @@ const output = document.getElementById('_output');
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 var guessNum = 1;
 
-// randomNumber game
+// check click/randomNumber game
 submitButton.onclick = function() {guessNumberGame(randomNumber)};
 function guessNumberGame(_randomNumber) {
+    // output
     function _output(val) {
         guessNum += 1;
         output.innerText = "Output: " + val;
     }
+    // Checks user guess
     let userGuess = parseInt(guess.value)
     if (userGuess === _randomNumber) {
         _output(`You guessed the number, ${_randomNumber} With ${guessNum} guesses. Generating a new random number...`);
