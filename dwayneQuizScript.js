@@ -30,5 +30,5 @@ function quiz() {
 // move back to main page
 returnButton.onclick = function() {main()};
 function main() {
-    location.href = "http://127.0.0.1:5500/website.html"
+    location.href = "http://127.0.0.1:5500/index.html"
 };
